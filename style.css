@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 20px;
+    color: rgb(33, 0, 63);
+    background-color: rgb(255, 246, 233);
+}
+
+header .container {
+    display: flex;
+    justify-content: end;
+}
+
+li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+    border-top: 4px solid transparent;
+    position: relative;
+}
+
+h1 {
+    color: rgb(0, 0, 155);
+    font-size: 40px;
+    font-family: 'Protest Guerrilla', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    margin-top: 2em;
+    margin-left: 2px;
+    border-bottom: 2px solid transparent;
+    border-color: blue;
+    font-family: 'Protest Guerrilla', sans-serif;
+}
+
+article a {
+    display: flex;
+    margin-top: 3em;
+}
+
+article img {
+    margin-right: 30px;
+    height: 300px;
+}
+
+article p {
+    font-size: 25px;
+}
+
+.loja ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.loja ul li img {
+    width: 100%;
+}
+
+.loja {
+    align-items: center;
+}
+
+.loja  {
+    display: flex;
+    font-size: 1.2em;
+    margin-top: 37px;
+}
+
+.loja  img {
+    max-width: 500px;
+    margin-right: 20px;
+    margin-bottom: 2%;
+}
+
+.loja li img {
+    max-width: 100%;
+}
+
+.loja li h3 {
+    margin: 16px 0;
+    font-family: 'Protest Guerrilla', sans-serif;
+}
+
+.Item-central {
+    margin: 0 5%;
+}
+
+.loja button {
+    display: block;
+    width: 70%;
+    padding: 8px 0;
+    border: none;
+    background-color: rgb(0, 0, 155);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.loja button:hover {
+    display: block;
+    width: 70%;
+    padding: 8px 0;
+    border: none;
+    background-color: rgb(0, 0, 39);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+
+    .conteudo {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+    
+    .menu > li {
+        font-size: 10px;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .sobre-loja a {
+        display: block;
+        font-size: 1em
+    }
+
+    .sobre-loja img {
+        max-width: 95%;
+    }
+
+    .sobre-loja p {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .loja .container-flex {
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    
+    .loja .sobre-nos img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+
+    .loja li {
+        max-width: 90%;
+    }
+
+    .loja img {
+        width: 400px;
+    }
+
+    .loja button {
+        margin-top: 2em;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .container {
+        max-width: 90%;
+    }
+
+    .sobre-loja {
+        display: grid;
+    }
+
+    .sobre-loja P{
+        font-size: 1.2em;
+    }
+
+    .sobre-loja img {
+        max-width: 50%;
+    }
+
+    .loja .container-flex {
+        grid-template-columns: repeat(2, 49%);
+    }
+
+    .loja .sobre-nos img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+
+}
